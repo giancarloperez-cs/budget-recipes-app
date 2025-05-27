@@ -21,14 +21,17 @@ const recipeData = {
     const matchedStore = Object.keys(recipeData).find(key => userInput.includes(key));
   
     if (!matchedStore) {
-      recipesDiv.innerHTML = "<p>Sorry, we don't have recipes for that store yet. Try Walmart, Aldi, or Local.</p>";
+      recipesDiv.innerHTML = `<p style="color: red;">Sorry, we don't have recipes for that store yet. Try Walmart, Aldi, or Local.</p>`;
       return;
     }
   
     recipeData[matchedStore].forEach(recipe => {
       const div = document.createElement('div');
       div.className = "recipe";
-      div.innerHTML = `<h3>${recipe.name}</h3><p>Ingredients: ${recipe.ingredients.join(", ")}</p>`;
+      div.innerHTML = `
+        <h3>${recipe.name}</h3>
+        <p><strong>Ingredients:</strong> ${recipe.ingredients.join(", ")}</p>
+      `;
       recipesDiv.appendChild(div);
     });
   }
