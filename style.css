@@ -10,6 +10,7 @@
   --text-light: #5C6B50;
   --white: #FFFFFF;
   --shadow: 0 8px 24px rgba(74, 89, 62, 0.12);
+  --bg-soft: #F5F9F2;
 }
 
 * {
@@ -20,10 +21,13 @@
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background: var(--matcha-light);
+  background: var(--bg-soft);
   color: var(--text-dark);
   line-height: 1.7;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -64,10 +68,11 @@ main {
   max-width: 800px;
   margin: 40px auto;
   padding: 0 20px;
+  flex: 1;
 }
 
 .input-section {
-  background: var(--white);
+  background: var(--matcha-light);
   padding: 40px;
   border-radius: 16px;
   box-shadow: var(--shadow);
@@ -128,7 +133,7 @@ button:hover {
 }
 
 .recipe {
-  background-color: var(--white);
+  background-color: var(--matcha-light);
   border: 1px solid var(--matcha-accent);
   padding: 30px;
   border-radius: 16px;
@@ -151,9 +156,9 @@ button:hover {
 footer {
   text-align: center;
   padding: 40px 20px;
-  margin-top: 60px;
-  background-color: var(--white);
+  background-color: var(--matcha-light);
   color: var(--text-light);
   font-size: 0.95rem;
   border-top: 1px solid var(--matcha-accent);
+  margin-top: auto;
 }
