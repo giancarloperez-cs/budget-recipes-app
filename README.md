@@ -8,4 +8,4 @@ A web app that helps users find cheap and healthy recipes based on the grocery s
 - Simple UI
 - Works on mobile
 
-[Live Demo](https://giancarloperez-cs.github.io/budget-recipes-app/)
+[Live Website](https://giancarloperez-cs.github.io/budget-recipes-app/)
