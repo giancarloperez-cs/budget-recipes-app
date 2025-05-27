@@ -81,11 +81,11 @@ const recipeData = {
         }
       ],
       instructions: [
-        "1. Cook rice according to package instructions",
-        "2. Dice onion and sauté until soft",
-        "3. Add beans (drained and rinsed) and heat through",
-        "4. Mix with rice and top with salsa",
-        "5. Optional: Add shredded cheese if desired"
+        " Cook rice according to package instructions",
+        " Dice onion and sauté until soft",
+        " Add beans (drained and rinsed) and heat through",
+        " Mix with rice and top with salsa",
+        " Optional: Add shredded cheese if desired"
       ],
       servings: 6,
       totalCalories: 2125, // Sum of all ingredient calories
