@@ -222,3 +222,44 @@ footer {
   flex-shrink: 0;
   width: 100%;
 }
+
+.price-warning {
+  margin: 20px 0 40px 0;
+  width: 100%;
+}
+
+.price-warning p {
+  background-color: var(--matcha-light);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--matcha-accent);
+  margin: 0;
+}
+
+.recipe-category {
+  margin: 50px 0 30px 0;
+  width: 100%;
+}
+
+.recipe-category:first-of-type {
+  margin-top: 20px;
+}
+
+.recipe-category h2 {
+  color: var(--matcha-dark);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  padding-bottom: 15px;
+  margin: 0 0 30px 0;
+  border-bottom: 2px solid var(--matcha-accent);
+  width: 100%;
+  text-align: left;
+}
+
+.recipe {
+  margin-bottom: 40px;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}

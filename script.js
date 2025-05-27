@@ -372,7 +372,7 @@ function showRecipes() {
   const warningDiv = document.createElement('div');
   warningDiv.className = "price-warning";
   warningDiv.innerHTML = `
-    <p style="background-color: var(--matcha-light); padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid var(--matcha-accent);">
+    <p>
       <strong>⚠️ Price Notice:</strong> All prices shown are approximate and based on Great Value or store brand items when available. 
       Actual prices may vary by location and time of year. Prices shown are estimates from Walmart US stores and were last updated in 2024.
     </p>
@@ -392,7 +392,7 @@ function showRecipes() {
   for (const [category, recipes] of Object.entries(recipesByCategory)) {
     const categoryDiv = document.createElement('div');
     categoryDiv.className = "recipe-category";
-    categoryDiv.innerHTML = `<h2 style="color: var(--matcha-dark); margin: 30px 0 20px 0; padding-bottom: 10px; border-bottom: 2px solid var(--matcha-accent);">${category}</h2>`;
+    categoryDiv.innerHTML = `<h2>${category}</h2>`;
     recipesDiv.appendChild(categoryDiv);
 
     recipes.forEach(recipe => {
