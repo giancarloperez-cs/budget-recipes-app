@@ -1,42 +1,42 @@
-// Static database of common ingredient prices (approximate Walmart prices)
+// Static database of common ingredient prices and calories (approximate Walmart prices)
 const ingredientPriceDB = {
   // Proteins
-  "chicken breast": { price: 3.98, unit: "per lb", brand: "Great Value" },
-  "ground beef": { price: 4.94, unit: "per lb", brand: "Great Value" },
-  "eggs": { price: 4.98, unit: "per dozen", brand: "Great Value" },
-  "tofu": { price: 1.98, unit: "per block", brand: "Great Value" },
-  "canned tuna": { price: 0.88, unit: "per can", brand: "Great Value" },
-  "rotisserie chicken": { price: 4.98, unit: "whole chicken", brand: "Walmart Deli" },
-  "peanut butter": { price: 1.97, unit: "15 oz jar", brand: "Great Value" },
+  "boneless skinless chicken breast": { price: 3.98, unit: "per lb", brand: "Great Value", calories: 120 }, // per 4 oz
+  "80/20 ground beef": { price: 4.94, unit: "per lb", brand: "Great Value", calories: 290 }, // per 4 oz
+  "large grade A eggs": { price: 4.98, unit: "per dozen", brand: "Great Value", calories: 70 }, // per egg
+  "extra firm tofu (14 oz block)": { price: 1.98, unit: "per block", brand: "Great Value", calories: 90 }, // per 4 oz
+  "chunk light tuna in water": { price: 0.88, unit: "5 oz can", brand: "Great Value", calories: 100 }, // per can
+  "seasoned rotisserie chicken": { price: 4.98, unit: "2 lb chicken", brand: "Walmart Deli", calories: 750 }, // per half chicken
+  "creamy peanut butter": { price: 1.97, unit: "15 oz jar", brand: "Great Value", calories: 190 }, // per 2 tbsp
   
   // Vegetables & Fruits
-  "frozen vegetables": { price: 1.98, unit: "per bag", brand: "Great Value" },
-  "onion": { price: 0.98, unit: "each", brand: "Fresh Produce" },
-  "garlic": { price: 0.50, unit: "per head", brand: "Fresh Produce" },
-  "carrots": { price: 1.48, unit: "per lb", brand: "Fresh Produce" },
-  "potatoes": { price: 4.98, unit: "5 lb bag", brand: "Fresh Produce" },
-  "bananas": { price: 0.25, unit: "each", brand: "Fresh Produce" },
-  "canned corn": { price: 0.68, unit: "per can", brand: "Great Value" },
-  "canned tomatoes": { price: 0.88, unit: "per can", brand: "Great Value" },
+  "mixed frozen vegetables": { price: 1.98, unit: "12 oz bag", brand: "Great Value", calories: 70 }, // per cup
+  "yellow onion (medium)": { price: 0.98, unit: "each", brand: "Fresh Produce", calories: 45 }, // per onion
+  "fresh garlic head": { price: 0.50, unit: "per head", brand: "Fresh Produce", calories: 4 }, // per clove
+  "whole carrots": { price: 1.48, unit: "per lb", brand: "Fresh Produce", calories: 30 }, // per medium carrot
+  "russet potatoes": { price: 4.98, unit: "5 lb bag", brand: "Fresh Produce", calories: 110 }, // per medium potato
+  "yellow bananas": { price: 0.25, unit: "each", brand: "Fresh Produce", calories: 105 }, // per banana
+  "whole kernel corn": { price: 0.68, unit: "15.25 oz can", brand: "Great Value", calories: 140 }, // per cup
+  "diced tomatoes (no salt added)": { price: 0.88, unit: "14.5 oz can", brand: "Great Value", calories: 30 }, // per 1/2 cup
   
   // Pantry Items
-  "rice": { price: 4.48, unit: "5 lb bag", brand: "Great Value" },
-  "pasta": { price: 1.00, unit: "per lb", brand: "Great Value" },
-  "soy sauce": { price: 1.98, unit: "per bottle", brand: "Great Value" },
-  "olive oil": { price: 4.98, unit: "17 oz bottle", brand: "Great Value" },
-  "black beans": { price: 0.78, unit: "per can", brand: "Great Value" },
-  "chicken broth": { price: 1.38, unit: "32 oz", brand: "Great Value" },
-  "tomato sauce": { price: 0.48, unit: "8 oz can", brand: "Great Value" },
-  "salsa": { price: 1.98, unit: "24 oz jar", brand: "Great Value" },
+  "long grain white rice": { price: 4.48, unit: "5 lb bag", brand: "Great Value", calories: 160 }, // per 1/4 cup dry
+  "penne pasta": { price: 1.00, unit: "16 oz box", brand: "Great Value", calories: 200 }, // per 2 oz dry
+  "reduced sodium soy sauce": { price: 1.98, unit: "15 oz bottle", brand: "Great Value", calories: 10 }, // per tbsp
+  "extra virgin olive oil": { price: 4.98, unit: "17 oz bottle", brand: "Great Value", calories: 120 }, // per tbsp
+  "black beans (low sodium)": { price: 0.78, unit: "15 oz can", brand: "Great Value", calories: 120 }, // per 1/2 cup
+  "low sodium chicken broth": { price: 1.38, unit: "32 oz carton", brand: "Great Value", calories: 10 }, // per cup
+  "tomato sauce (no salt added)": { price: 0.48, unit: "8 oz can", brand: "Great Value", calories: 30 }, // per 1/2 cup
+  "chunky medium salsa": { price: 1.98, unit: "24 oz jar", brand: "Great Value", calories: 20 }, // per 1/4 cup
   
   // Dairy
-  "milk": { price: 3.98, unit: "per gallon", brand: "Great Value" },
-  "cheese": { price: 2.98, unit: "8 oz block", brand: "Great Value" },
-  "butter": { price: 3.98, unit: "per lb", brand: "Great Value" },
+  "2% reduced fat milk": { price: 3.98, unit: "per gallon", brand: "Great Value", calories: 120 }, // per cup
+  "mild cheddar cheese block": { price: 2.98, unit: "8 oz block", brand: "Great Value", calories: 110 }, // per oz
+  "unsalted butter": { price: 3.98, unit: "16 oz (4 sticks)", brand: "Great Value", calories: 100 }, // per tbsp
   
   // Bread & Bakery
-  "bread": { price: 1.00, unit: "per loaf", brand: "Great Value" },
-  "tortillas": { price: 1.98, unit: "10 count", brand: "Great Value" }
+  "whole wheat bread": { price: 1.00, unit: "20 oz loaf", brand: "Great Value", calories: 80 }, // per slice
+  "flour tortillas (8-inch)": { price: 1.98, unit: "10 count", brand: "Great Value", calories: 140 } // per tortilla
 };
 
 // Recipe data with common ingredients
@@ -48,68 +48,75 @@ const recipeData = {
       name: "Budget Rice & Beans (6 servings)",
       ingredients: [
         {
-          name: "rice",
+          name: "long grain white rice",
           type: "grain",
-          quantity: "2 cups dry",
-          estimatedCost: (ingredientPriceDB["rice"].price / 5) * 2 // 2 cups from 5lb bag
+          quantity: "2 cups dry (about 1 lb)",
+          estimatedCost: (ingredientPriceDB["long grain white rice"].price / 5) * 2,
+          calories: ingredientPriceDB["long grain white rice"].calories * 8 // 8 quarter-cups
         },
         {
-          name: "black beans",
+          name: "black beans (low sodium)",
           type: "protein",
-          quantity: "2 cans",
-          estimatedCost: ingredientPriceDB["black beans"].price * 2
+          quantity: "2 cans (15 oz each)",
+          estimatedCost: ingredientPriceDB["black beans (low sodium)"].price * 2,
+          calories: ingredientPriceDB["black beans (low sodium)"].calories * 6
         },
         {
-          name: "onion",
+          name: "yellow onion (medium)",
           type: "produce",
-          quantity: "1",
-          estimatedCost: ingredientPriceDB["onion"].price
+          quantity: "1 whole onion, diced",
+          estimatedCost: ingredientPriceDB["yellow onion (medium)"].price,
+          calories: ingredientPriceDB["yellow onion (medium)"].calories
         },
         {
-          name: "salsa",
+          name: "chunky medium salsa",
           type: "condiment",
-          quantity: "1 cup",
-          estimatedCost: ingredientPriceDB["salsa"].price / 2
+          quantity: "1 cup (8 oz)",
+          estimatedCost: ingredientPriceDB["chunky medium salsa"].price / 2,
+          calories: ingredientPriceDB["chunky medium salsa"].calories * 4
         }
       ],
       instructions: [
         "1. Cook rice according to package instructions",
         "2. Dice onion and sauté until soft",
-        "3. Add beans (drained) and heat through",
+        "3. Add beans (drained and rinsed) and heat through",
         "4. Mix with rice and top with salsa",
-        "5. Optional: Add cheese if desired"
+        "5. Optional: Add shredded cheese if desired"
       ],
       servings: 6
     },
     {
       category: "Under $10 Total",
-      name: "Tuna Pasta Salad (4 servings)",
+      name: "Tuna Pasta Bowl (4 servings)",
       ingredients: [
         {
-          name: "pasta",
+          name: "penne pasta",
           type: "grain",
-          quantity: "1 lb",
-          estimatedCost: ingredientPriceDB["pasta"].price
+          quantity: "16 oz box",
+          estimatedCost: ingredientPriceDB["penne pasta"].price,
+          calories: ingredientPriceDB["penne pasta"].calories * 8 // 8 2-oz servings
         },
         {
-          name: "canned tuna",
+          name: "chunk light tuna in water",
           type: "protein",
-          quantity: "2 cans",
-          estimatedCost: ingredientPriceDB["canned tuna"].price * 2
+          quantity: "2 cans (5 oz each), drained",
+          estimatedCost: ingredientPriceDB["chunk light tuna in water"].price * 2,
+          calories: ingredientPriceDB["chunk light tuna in water"].calories * 2
         },
         {
-          name: "frozen vegetables",
+          name: "mixed frozen vegetables",
           type: "produce",
-          quantity: "1 bag",
-          estimatedCost: ingredientPriceDB["frozen vegetables"].price
+          quantity: "1 bag (12 oz)",
+          estimatedCost: ingredientPriceDB["mixed frozen vegetables"].price,
+          calories: ingredientPriceDB["mixed frozen vegetables"].calories * 3 // about 3 cups
         }
       ],
       instructions: [
-        "1. Cook pasta according to package instructions",
-        "2. Cook frozen vegetables in microwave",
-        "3. Drain tuna and mix with pasta and vegetables",
-        "4. Season with salt and pepper to taste",
-        "5. Serve cold or warm"
+        "1. Cook pasta according to package instructions until al dente",
+        "2. Cook frozen vegetables in microwave following package directions",
+        "3. Drain tuna well and break into chunks",
+        "4. Combine pasta, vegetables, and tuna in a large bowl",
+        "5. Season with salt and pepper to taste"
       ],
       servings: 4
     },
@@ -118,22 +125,22 @@ const recipeData = {
       name: "PB&B Breakfast Sandwiches (4 servings)",
       ingredients: [
         {
-          name: "bread",
+          name: "whole wheat bread",
           type: "grain",
           quantity: "8 slices",
-          estimatedCost: ingredientPriceDB["bread"].price
+          estimatedCost: ingredientPriceDB["whole wheat bread"].price
         },
         {
-          name: "peanut butter",
+          name: "creamy peanut butter",
           type: "protein",
           quantity: "4 tablespoons",
-          estimatedCost: ingredientPriceDB["peanut butter"].price / 4
+          estimatedCost: ingredientPriceDB["creamy peanut butter"].price / 4
         },
         {
-          name: "bananas",
+          name: "yellow bananas",
           type: "fruit",
           quantity: "2",
-          estimatedCost: ingredientPriceDB["bananas"].price * 2
+          estimatedCost: ingredientPriceDB["yellow bananas"].price * 2
         }
       ],
       instructions: [
@@ -152,22 +159,22 @@ const recipeData = {
       name: "Potato & Egg Breakfast (3 servings)",
       ingredients: [
         {
-          name: "potatoes",
+          name: "russet potatoes",
           type: "produce",
           quantity: "3 medium",
-          estimatedCost: (ingredientPriceDB["potatoes"].price / 10) * 3 // Assuming 10 potatoes per 5lb bag
+          estimatedCost: (ingredientPriceDB["russet potatoes"].price / 10) * 3 // Assuming 10 potatoes per 5lb bag
         },
         {
-          name: "eggs",
+          name: "large grade A eggs",
           type: "protein",
           quantity: "6",
-          estimatedCost: (ingredientPriceDB["eggs"].price / 12) * 6
+          estimatedCost: (ingredientPriceDB["large grade A eggs"].price / 12) * 6
         },
         {
-          name: "onion",
+          name: "yellow onion (medium)",
           type: "produce",
           quantity: "1/2",
-          estimatedCost: ingredientPriceDB["onion"].price / 2
+          estimatedCost: ingredientPriceDB["yellow onion (medium)"].price / 2
         }
       ],
       instructions: [
@@ -184,22 +191,22 @@ const recipeData = {
       name: "Simple Pasta Marinara (4 servings)",
       ingredients: [
         {
-          name: "pasta",
+          name: "penne pasta",
           type: "grain",
-          quantity: "1 lb",
-          estimatedCost: ingredientPriceDB["pasta"].price
+          quantity: "16 oz box",
+          estimatedCost: ingredientPriceDB["penne pasta"].price
         },
         {
-          name: "tomato sauce",
+          name: "tomato sauce (no salt added)",
           type: "sauce",
           quantity: "2 cans (16 oz)",
-          estimatedCost: ingredientPriceDB["tomato sauce"].price * 2
+          estimatedCost: ingredientPriceDB["tomato sauce (no salt added)"].price * 2
         },
         {
-          name: "garlic",
+          name: "fresh garlic head",
           type: "produce",
           quantity: "3 cloves",
-          estimatedCost: ingredientPriceDB["garlic"].price / 2
+          estimatedCost: ingredientPriceDB["fresh garlic head"].price / 2
         }
       ],
       instructions: [
@@ -216,22 +223,22 @@ const recipeData = {
       name: "Black Bean Soup (6 servings)",
       ingredients: [
         {
-          name: "black beans",
+          name: "black beans (low sodium)",
           type: "protein",
-          quantity: "3 cans",
-          estimatedCost: ingredientPriceDB["black beans"].price * 3
+          quantity: "3 cans (15 oz each)",
+          estimatedCost: ingredientPriceDB["black beans (low sodium)"].price * 3
         },
         {
-          name: "onion",
+          name: "yellow onion (medium)",
           type: "produce",
           quantity: "1",
-          estimatedCost: ingredientPriceDB["onion"].price
+          estimatedCost: ingredientPriceDB["yellow onion (medium)"].price
         },
         {
-          name: "chicken broth",
+          name: "low sodium chicken broth",
           type: "liquid",
           quantity: "32 oz",
-          estimatedCost: ingredientPriceDB["chicken broth"].price
+          estimatedCost: ingredientPriceDB["low sodium chicken broth"].price
         }
       ],
       instructions: [
@@ -250,28 +257,28 @@ const recipeData = {
       name: "5-Ingredient Chili (6 servings)",
       ingredients: [
         {
-          name: "ground beef",
+          name: "80/20 ground beef",
           type: "protein",
           quantity: "1 lb",
-          estimatedCost: ingredientPriceDB["ground beef"].price
+          estimatedCost: ingredientPriceDB["80/20 ground beef"].price
         },
         {
-          name: "black beans",
+          name: "black beans (low sodium)",
           type: "protein",
-          quantity: "2 cans",
-          estimatedCost: ingredientPriceDB["black beans"].price * 2
+          quantity: "2 cans (15 oz each)",
+          estimatedCost: ingredientPriceDB["black beans (low sodium)"].price * 2
         },
         {
-          name: "canned tomatoes",
+          name: "diced tomatoes (no salt added)",
           type: "produce",
           quantity: "2 cans",
-          estimatedCost: ingredientPriceDB["canned tomatoes"].price * 2
+          estimatedCost: ingredientPriceDB["diced tomatoes (no salt added)"].price * 2
         },
         {
-          name: "onion",
+          name: "yellow onion (medium)",
           type: "produce",
           quantity: "1",
-          estimatedCost: ingredientPriceDB["onion"].price
+          estimatedCost: ingredientPriceDB["yellow onion (medium)"].price
         }
       ],
       instructions: [
@@ -279,7 +286,7 @@ const recipeData = {
         "2. Add beans and tomatoes",
         "3. Simmer for 20 minutes",
         "4. Season with salt and pepper",
-        "5. Optional: Top with cheese"
+        "5. Optional: Top with shredded cheese"
       ],
       servings: 6
     },
@@ -288,22 +295,22 @@ const recipeData = {
       name: "Rotisserie Chicken Rice Bowls (6 servings)",
       ingredients: [
         {
-          name: "rotisserie chicken",
+          name: "seasoned rotisserie chicken",
           type: "protein",
-          quantity: "1 whole chicken",
-          estimatedCost: ingredientPriceDB["rotisserie chicken"].price
+          quantity: "2 lb chicken",
+          estimatedCost: ingredientPriceDB["seasoned rotisserie chicken"].price
         },
         {
-          name: "rice",
+          name: "long grain white rice",
           type: "grain",
           quantity: "2 cups dry",
-          estimatedCost: (ingredientPriceDB["rice"].price / 5) * 2
+          estimatedCost: (ingredientPriceDB["long grain white rice"].price / 5) * 2
         },
         {
-          name: "frozen vegetables",
+          name: "mixed frozen vegetables",
           type: "produce",
           quantity: "2 bags",
-          estimatedCost: ingredientPriceDB["frozen vegetables"].price * 2
+          estimatedCost: ingredientPriceDB["mixed frozen vegetables"].price * 2
         }
       ],
       instructions: [
@@ -320,28 +327,28 @@ const recipeData = {
       name: "Hearty Potato & Ground Beef Skillet (6 servings)",
       ingredients: [
         {
-          name: "ground beef",
+          name: "80/20 ground beef",
           type: "protein",
           quantity: "1 lb",
-          estimatedCost: ingredientPriceDB["ground beef"].price
+          estimatedCost: ingredientPriceDB["80/20 ground beef"].price
         },
         {
-          name: "potatoes",
+          name: "russet potatoes",
           type: "produce",
           quantity: "6 medium",
-          estimatedCost: (ingredientPriceDB["potatoes"].price / 10) * 6
+          estimatedCost: (ingredientPriceDB["russet potatoes"].price / 10) * 6
         },
         {
-          name: "onion",
+          name: "yellow onion (medium)",
           type: "produce",
           quantity: "1",
-          estimatedCost: ingredientPriceDB["onion"].price
+          estimatedCost: ingredientPriceDB["yellow onion (medium)"].price
         },
         {
-          name: "canned corn",
+          name: "whole kernel corn",
           type: "produce",
           quantity: "1 can",
-          estimatedCost: ingredientPriceDB["canned corn"].price
+          estimatedCost: ingredientPriceDB["whole kernel corn"].price
         }
       ],
       instructions: [
@@ -368,13 +375,14 @@ function showRecipes() {
     return;
   }
 
-  // Add price warning at the top
+  // Add price and calorie warning at the top
   const warningDiv = document.createElement('div');
   warningDiv.className = "price-warning";
   warningDiv.innerHTML = `
     <p>
-      <strong>⚠️ Price Notice:</strong> All prices shown are approximate and based on Great Value or store brand items when available. 
-      Actual prices may vary by location and time of year. Prices shown are estimates from Walmart US stores and were last updated in 2024.
+      <strong>⚠️ Notice:</strong> All prices and calorie counts shown are approximate. 
+      Prices are based on Great Value or store brand items when available and may vary by location and time of year. 
+      Calorie information is estimated based on standard serving sizes. Prices shown are estimates from Walmart US stores and were last updated in 2024.
     </p>
   `;
   recipesDiv.appendChild(warningDiv);
@@ -400,24 +408,35 @@ function showRecipes() {
       div.className = "recipe";
       
       let totalCost = 0;
+      let totalCalories = 0;
       let ingredientsList = '';
       
       recipe.ingredients.forEach(item => {
         totalCost += item.estimatedCost;
+        totalCalories += item.calories;
         ingredientsList += `
           <li>
             ${item.name} - ${item.quantity}
             <br>
-            <small>Estimated cost: $${item.estimatedCost.toFixed(2)} 
-            (${ingredientPriceDB[item.name].brand} - ${ingredientPriceDB[item.name].unit})</small>
+            <small>
+              Estimated cost: $${item.estimatedCost.toFixed(2)} 
+              (${ingredientPriceDB[item.name].brand} - ${ingredientPriceDB[item.name].unit})
+              <br>
+              Calories: ~${item.calories} cal
+            </small>
           </li>
         `;
       });
 
+      const caloriesPerServing = Math.round(totalCalories / recipe.servings);
+
       div.innerHTML = `
         <h3>${recipe.name}</h3>
-        <p><strong>Estimated Total Cost: $${totalCost.toFixed(2)}</strong></p>
-        <p><strong>Cost per serving: $${(totalCost / recipe.servings).toFixed(2)}</strong> (Makes ${recipe.servings} servings)</p>
+        <div class="recipe-summary">
+          <p><strong>Estimated Total Cost: $${totalCost.toFixed(2)}</strong></p>
+          <p><strong>Cost per serving: $${(totalCost / recipe.servings).toFixed(2)}</strong> (Makes ${recipe.servings} servings)</p>
+          <p><strong>Calories per serving: ~${caloriesPerServing}</strong> (Total: ~${totalCalories} cal)</p>
+        </div>
         <div class="ingredients">
           <h4>Ingredients:</h4>
           <ul>${ingredientsList}</ul>
