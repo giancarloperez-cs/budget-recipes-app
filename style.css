@@ -1,0 +1,53 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #dff0d8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .recipe {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 15px auto;
+    padding: 15px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
