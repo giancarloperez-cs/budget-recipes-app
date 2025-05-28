@@ -1,3 +1,3 @@
 git add .
-git commit -m "survey added to footer"
+git commit -m "portfolio added to footer"
 git push
