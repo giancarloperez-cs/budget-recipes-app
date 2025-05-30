@@ -233,6 +233,14 @@ footer {
   gap: 15px;
   max-width: 800px;
   margin: 0 auto;
+  flex-direction: column;
+}
+
+.footer-links .footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
 .footer-links a, .footer-links span {
@@ -241,6 +249,11 @@ footer {
   padding: 5px 10px;
   border-radius: 4px;
   transition: all 0.2s ease;
+}
+
+.footer-links span {
+  margin-top: 10px;
+  opacity: 0.9;
 }
 
 .footer-links a:hover {
@@ -253,15 +266,20 @@ footer {
     padding: 15px 10px;
   }
   
-  .footer-links {
+  .footer-links .footer-nav {
     flex-direction: column;
     gap: 10px;
   }
   
-  .footer-links a, .footer-links span {
+  .footer-links a {
     padding: 8px;
     background-color: var(--white);
     border: 1px solid var(--matcha-accent);
+  }
+
+  .footer-links span {
+    margin-top: 15px;
+    padding: 8px;
   }
 
   header {
