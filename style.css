@@ -41,7 +41,8 @@ header {
   box-shadow: var(--shadow);
   position: relative;
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  z-index: 1;
 }
 
 header::before {
@@ -69,7 +70,8 @@ header p {
   color: var(--text-light);
   max-width: 600px;
   margin: 0 auto;
-  padding: 0 10px;
+  position: relative;
+  z-index: 2;
 }
 
 main {
@@ -285,7 +287,7 @@ footer {
 
   header {
     padding: 40px 15px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   header h1 {
@@ -299,7 +301,7 @@ footer {
   }
 
   .announcements {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -409,7 +411,7 @@ footer {
 .announcements {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto 40px;
+  margin: 0 auto 30px;
   padding: 0 20px;
   position: relative;
 }
@@ -418,15 +420,15 @@ footer {
   background-color: var(--matcha-light);
   border: 2px solid var(--matcha-primary);
   border-radius: 12px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: var(--shadow);
 }
 
 .announcement-box h2 {
   color: var(--matcha-dark);
   font-family: 'Outfit', sans-serif;
-  font-size: 1.4rem;
-  margin-bottom: 15px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -434,25 +436,26 @@ footer {
 
 .announcement-box p {
   color: var(--text-dark);
-  margin: 10px 0;
-  line-height: 1.5;
-  font-size: 1rem;
-}
-
-.announcement-box p:last-child {
-  margin-bottom: 0;
+  margin: 8px 0;
+  line-height: 1.4;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 600px) {
   .announcements {
-    margin-top: 15px;
+    margin-bottom: 20px;
   }
   
   .announcement-box {
-    padding: 15px;
+    padding: 12px;
   }
   
   .announcement-box h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  
+  .announcement-box p {
+    font-size: 0.9rem;
+    margin: 6px 0;
   }
 }
