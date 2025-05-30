@@ -1,3 +1,3 @@
 git add .
-git commit -m "updates text"
+git commit -m "new announcement"
 git push
