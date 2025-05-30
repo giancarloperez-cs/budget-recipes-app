@@ -683,18 +683,32 @@ function showRecipes() {
   // Show scroll button when recipes are displayed
   document.querySelector('.scroll-bottom').style.display = 'flex';
 
-  // Add price and calorie warning at the top
+  // Add price and calorie warning at the top with store-specific messaging
   const warningDiv = document.createElement('div');
   warningDiv.className = "price-warning";
-  warningDiv.innerHTML = `
-    <p>
-      <strong>⚠️ Notice:</strong> All prices and calorie counts shown are approximate. 
-      Prices are based on Great Value or store brand items when available and may vary by location and time of year. 
-      Calorie information is estimated based on standard serving sizes and typical portions. 
-      Actual calories may vary based on specific products used and preparation methods.
-      Prices shown are estimates from Walmart US stores and were last updated in 2024.
-    </p>
-  `;
+  
+  const warningMessage = matchedStore === 'costco' 
+    ? `
+      <p>
+        <strong>⚠️ Notice:</strong> All prices and calorie counts shown are approximate. 
+        Prices are based on Kirkland Signature or Costco-specific items and may vary by location and time of year. 
+        Calorie information is estimated based on standard serving sizes and typical portions. 
+        Actual calories may vary based on specific products used and preparation methods.
+        Prices shown are estimates from Costco US stores and were last updated in 2024.
+        Note that Costco prices and availability can vary significantly by region.
+      </p>
+    `
+    : `
+      <p>
+        <strong>⚠️ Notice:</strong> All prices and calorie counts shown are approximate. 
+        Prices are based on Great Value or store brand items when available and may vary by location and time of year. 
+        Calorie information is estimated based on standard serving sizes and typical portions. 
+        Actual calories may vary based on specific products used and preparation methods.
+        Prices shown are estimates from Walmart US stores and were last updated in 2024.
+      </p>
+    `;
+  
+  warningDiv.innerHTML = warningMessage;
   recipesDiv.appendChild(warningDiv);
 
   // Group recipes by category

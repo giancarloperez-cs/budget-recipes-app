@@ -1,3 +1,3 @@
 git add .
-git commit -m "added costco recipes"
+git commit -m "fixed warning message"
 git push
