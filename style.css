@@ -59,6 +59,8 @@ header h1 {
   color: var(--matcha-dark);
   font-weight: 600;
   margin-bottom: 16px;
+  line-height: 1.2;
+  padding: 0 10px;
 }
 
 header p {
@@ -66,6 +68,7 @@ header p {
   color: var(--text-light);
   max-width: 600px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 main {
@@ -259,6 +262,20 @@ footer {
     padding: 8px;
     background-color: var(--white);
     border: 1px solid var(--matcha-accent);
+  }
+
+  header {
+    padding: 40px 15px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+  }
+
+  header p {
+    font-size: 1.1rem;
+    line-height: 1.5;
   }
 }
 
