@@ -543,44 +543,54 @@ const recipeData = {
     // Family Size Under $50 Category
     {
       category: "Family Size Under $50",
-      name: "Costco Taco Night (20 servings)",
+      name: "Chicken Mozzarella Pasta Bake (20 servings)",
       ingredients: [
         {
-          name: "kirkland ground beef",
+          name: "kirkland chicken breast",
           type: "protein",
           quantity: "4 lbs",
-          estimatedCost: (19.99 / 5.5) * 4,
-          calories: 4640, // 16 4-oz servings
-          caloriesPerServing: 232
+          estimatedCost: (21.99 / 6.5) * 4,
+          calories: 1920, // 16 4-oz servings
+          caloriesPerServing: 96
         },
         {
-          name: "kirkland tortillas",
+          name: "kirkland pasta",
           type: "grain",
-          quantity: "20 tortillas",
-          estimatedCost: 6.99,
-          calories: 2800, // 20 tortillas
-          caloriesPerServing: 140
+          quantity: "4 lbs",
+          estimatedCost: (9.99 / 8) * 4,
+          calories: 4000, // 20 2-oz servings
+          caloriesPerServing: 200
+        },
+        {
+          name: "kirkland marinara",
+          type: "sauce",
+          quantity: "2 jars (90 oz total)",
+          estimatedCost: (9.99 / 3) * 2,
+          calories: 1400, // 20 half-cup servings
+          caloriesPerServing: 70
         },
         {
           name: "kirkland mozzarella",
           type: "dairy",
-          quantity: "1 lb",
-          estimatedCost: (13.99 / 2.5) * 1,
-          calories: 1280, // 16 oz
-          caloriesPerServing: 64
+          quantity: "2 lbs",
+          estimatedCost: (13.99 / 2.5) * 2,
+          calories: 2560, // 32 oz
+          caloriesPerServing: 128
         }
       ],
       instructions: [
-        "Brown ground beef in batches",
-        "Season meat with taco seasoning",
-        "Warm tortillas",
-        "Shred cheese",
-        "Assemble tacos with meat and cheese",
-        "Optional: Add your favorite toppings"
+        "Cut chicken breasts into bite-sized pieces",
+        "Season chicken with salt, pepper, and Italian herbs",
+        "Cook chicken in batches until golden",
+        "Cook pasta in large pots until al dente",
+        "Mix pasta with marinara sauce and cooked chicken",
+        "Transfer to baking dishes, top with mozzarella",
+        "Bake at 375°F until cheese is melted and bubbly",
+        "Optional: Garnish with fresh basil if desired"
       ],
       servings: 20,
-      totalCalories: 8720,
-      caloriesPerServing: 436
+      totalCalories: 9880,
+      caloriesPerServing: 494
     },
     {
       category: "Family Size Under $50",
