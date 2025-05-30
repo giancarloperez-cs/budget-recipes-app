@@ -741,19 +741,31 @@ function showRecipes() {
       const div = document.createElement('div');
       div.className = "recipe";
       
-      let totalCost = 0;
+      let recipeIngredientCost = 0;
+      let totalPackageCost = 0;
       let totalCalories = 0;
       let ingredientsList = '';
       
       recipe.ingredients.forEach(item => {
-        totalCost += item.estimatedCost;
+        // Calculate the cost of ingredients used in recipe
+        recipeIngredientCost += item.estimatedCost;
+        
+        // Calculate the cost of full packages needed
+        const fullPackagePrice = (() => {
+          const itemDB = ingredientPriceDB[item.name];
+          return itemDB.price;
+        })();
+        totalPackageCost += fullPackagePrice;
+        
         totalCalories += item.calories;
         ingredientsList += `
           <li>
             ${item.name} - ${item.quantity}
             <br>
             <small>
-              Estimated cost: $${item.estimatedCost.toFixed(2)} 
+              Cost for recipe portion: $${item.estimatedCost.toFixed(2)} 
+              <br>
+              Full package cost: $${ingredientPriceDB[item.name].price.toFixed(2)}
               (${ingredientPriceDB[item.name].brand} - ${ingredientPriceDB[item.name].unit})
               <br>
               Calories: ~${item.calories} total (${item.caloriesPerServing} cal per serving)
@@ -767,8 +779,9 @@ function showRecipes() {
       div.innerHTML = `
         <h3>${recipe.name}</h3>
         <div class="recipe-summary">
-          <p><strong>Estimated Total Cost: $${totalCost.toFixed(2)}</strong></p>
-          <p><strong>Cost per serving: $${(totalCost / recipe.servings).toFixed(2)}</strong> (Makes ${recipe.servings} servings)</p>
+          <p><strong>Estimated Cost for Recipe Portions: $${recipeIngredientCost.toFixed(2)}</strong></p>
+          <p><strong>Total Cost for Full Packages: $${totalPackageCost.toFixed(2)}</strong></p>
+          <p><strong>Cost per serving (based on recipe portions): $${(recipeIngredientCost / recipe.servings).toFixed(2)}</strong> (Makes ${recipe.servings} servings)</p>
           <p><strong>Total Calories: ${totalCalories}</strong></p>
           <p><strong>Calories per serving: ${caloriesPerServing}</strong></p>
         </div>
