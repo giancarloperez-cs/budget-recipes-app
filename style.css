@@ -41,7 +41,6 @@ header {
   box-shadow: var(--shadow);
   position: relative;
   overflow: hidden;
-  margin-bottom: 20px;
   z-index: 1;
 }
 
@@ -287,7 +286,6 @@ footer {
 
   header {
     padding: 40px 15px;
-    margin-bottom: 15px;
   }
 
   header h1 {
@@ -300,8 +298,16 @@ footer {
     line-height: 1.5;
   }
 
+  main {
+    margin: 30px auto;
+  }
+
+  .input-section {
+    padding: 25px;
+  }
+
   .announcements {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
 
@@ -409,11 +415,8 @@ footer {
 }
 
 .announcements {
-  max-width: 800px;
   width: 100%;
-  margin: 0 auto 30px;
-  padding: 0 20px;
-  position: relative;
+  margin-bottom: 30px;
 }
 
 .announcement-box {
