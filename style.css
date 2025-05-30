@@ -41,6 +41,7 @@ header {
   box-shadow: var(--shadow);
   position: relative;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 header::before {
@@ -284,6 +285,7 @@ footer {
 
   header {
     padding: 40px 15px;
+    margin-bottom: 30px;
   }
 
   header h1 {
@@ -294,6 +296,10 @@ footer {
   header p {
     font-size: 1.1rem;
     line-height: 1.5;
+  }
+
+  .announcements {
+    margin-bottom: 30px;
   }
 }
 
@@ -403,8 +409,9 @@ footer {
 .announcements {
   max-width: 800px;
   width: 100%;
-  margin: 20px auto 0;
+  margin: 0 auto 40px;
   padding: 0 20px;
+  position: relative;
 }
 
 .announcement-box {
