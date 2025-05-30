@@ -415,8 +415,11 @@ footer {
 }
 
 .announcements {
+  max-width: 800px;
   width: 100%;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  position: relative;
 }
 
 .announcement-box {
@@ -445,20 +448,15 @@ footer {
 }
 
 @media (max-width: 600px) {
+  header {
+    padding: 40px 15px;
+  }
+
   .announcements {
     margin-bottom: 20px;
   }
   
   .announcement-box {
     padding: 12px;
-  }
-  
-  .announcement-box h2 {
-    font-size: 1rem;
-  }
-  
-  .announcement-box p {
-    font-size: 0.9rem;
-    margin: 6px 0;
   }
 }
