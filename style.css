@@ -417,7 +417,7 @@ footer {
 .announcements {
   max-width: 600px;
   width: 100%;
-  margin: 40px auto 30px;
+  margin: 80px auto 30px;
   padding: 0 20px;
   position: relative;
 }
@@ -449,7 +449,7 @@ footer {
 
 @media (max-width: 600px) {
   .announcements {
-    margin: 30px auto 20px;
+    margin: 60px auto 20px;
   }
   
   .announcement-box {
