@@ -363,11 +363,11 @@ footer {
 .scroll-bottom {
   position: fixed;
   bottom: 30px;
-  left: 30px;
-  background-color: var(--matcha-primary);
+  right: 30px;
+  background-color: var(--matcha-dark);
   color: var(--white);
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: none;
   justify-content: center;
@@ -377,10 +377,13 @@ footer {
   box-shadow: var(--shadow);
   transition: all 0.3s ease;
   z-index: 1000;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 4px;
 }
 
 .scroll-bottom:hover {
-  background-color: var(--matcha-dark);
+  background-color: var(--matcha-primary);
   transform: translateY(-2px);
   box-shadow: 0 8px 16px rgba(74, 89, 62, 0.2);
 }
@@ -388,8 +391,9 @@ footer {
 @media (max-width: 600px) {
   .scroll-bottom {
     bottom: 20px;
-    left: 20px;
-    width: 45px;
-    height: 45px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
   }
 }
