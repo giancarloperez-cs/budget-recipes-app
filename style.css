@@ -40,8 +40,8 @@ header {
   text-align: center;
   box-shadow: var(--shadow);
   position: relative;
-  overflow: hidden;
-  z-index: 1;
+  z-index: 2;
+  margin-bottom: 20px;
 }
 
 header::before {
@@ -70,7 +70,7 @@ header p {
   max-width: 600px;
   margin: 0 auto;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 main {
@@ -295,7 +295,7 @@ footer {
 
   header p {
     font-size: 1.1rem;
-    line-height: 1.5;
+    padding: 0 10px;
   }
 
   main {
@@ -307,7 +307,7 @@ footer {
   }
 
   .announcements {
-    margin-bottom: 25px;
+    margin: 40px auto 20px;
   }
 }
 
@@ -417,9 +417,10 @@ footer {
 .announcements {
   max-width: 600px;
   width: 100%;
-  margin: 80px auto 30px;
+  margin: 60px auto 30px;
   padding: 0 20px;
   position: relative;
+  z-index: 1;
 }
 
 .announcement-box {
@@ -449,7 +450,7 @@ footer {
 
 @media (max-width: 600px) {
   .announcements {
-    margin: 60px auto 20px;
+    margin: 40px auto 20px;
   }
   
   .announcement-box {
