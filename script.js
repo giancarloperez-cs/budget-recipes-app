@@ -36,20 +36,7 @@ const ingredientPriceDB = {
   
   // Bread & Bakery
   "whole wheat bread": { price: 1.00, unit: "20 oz loaf", brand: "Great Value", calories: 80 }, // per slice
-  "flour tortillas (8-inch)": { price: 1.98, unit: "10 count", brand: "Great Value", calories: 140 }, // per tortilla
-
-  // Costco specific items
-  "kirkland ground beef": { price: 19.99, unit: "5.5 lb pack", brand: "Kirkland Signature", calories: 290 }, // per 4 oz
-  "rotisserie chicken costco": { price: 4.99, unit: "3 lb chicken", brand: "Kirkland Signature", calories: 750 }, // per half chicken
-  "kirkland chicken breast": { price: 21.99, unit: "6.5 lb pack", brand: "Kirkland Signature", calories: 120 }, // per 4 oz
-  "kirkland bacon": { price: 16.99, unit: "4 lb pack", brand: "Kirkland Signature", calories: 90 }, // per 2 slices
-  "kirkland mozzarella": { price: 13.99, unit: "2.5 lb bag", brand: "Kirkland Signature", calories: 80 }, // per oz
-  "kirkland rice": { price: 16.99, unit: "25 lb bag", brand: "Kirkland Signature", calories: 160 }, // per 1/4 cup dry
-  "kirkland pasta": { price: 9.99, unit: "8 lb box", brand: "Kirkland Signature", calories: 200 }, // per 2 oz dry
-  "kirkland marinara": { price: 9.99, unit: "3-pack 45oz jars", brand: "Kirkland Signature", calories: 70 }, // per 1/2 cup
-  "kirkland frozen vegetables": { price: 12.99, unit: "5.5 lb bag", brand: "Kirkland Signature", calories: 70 }, // per cup
-  "kirkland eggs": { price: 8.99, unit: "24 count", brand: "Kirkland Signature", calories: 70 }, // per egg
-  "kirkland tortillas": { price: 6.99, unit: "20 count", brand: "Kirkland Signature", calories: 140 } // per tortilla
+  "flour tortillas (8-inch)": { price: 1.98, unit: "10 count", brand: "Great Value", calories: 140 } // per tortilla
 };
 
 // Recipe data with common ingredients
@@ -134,11 +121,11 @@ const recipeData = {
         }
       ],
       instructions: [
-        "Cook pasta according to package instructions until al dente",
-        "Cook frozen vegetables in microwave following package directions",
-        "Drain tuna well and break into chunks",
-        "Combine pasta, vegetables, and tuna in a large bowl",
-        "Season with salt and pepper to taste"
+        "1. Cook pasta according to package instructions until al dente",
+        "2. Cook frozen vegetables in microwave following package directions",
+        "3. Drain tuna well and break into chunks",
+        "4. Combine pasta, vegetables, and tuna in a large bowl",
+        "5. Season with salt and pepper to taste"
       ],
       servings: 4,
       totalCalories: 2010, // Sum of all ingredient calories
@@ -174,11 +161,11 @@ const recipeData = {
         }
       ],
       instructions: [
-        "Toast bread if desired",
-        "Spread 1 tablespoon peanut butter on each of 4 bread slices",
-        "Slice bananas thinly",
-        "Divide banana slices evenly among sandwiches",
-        "Top with remaining bread slices and cut diagonally"
+        "1. Toast bread if desired",
+        "2. Spread 1 tablespoon peanut butter on each of 4 bread slices",
+        "3. Slice bananas thinly",
+        "4. Divide banana slices evenly among sandwiches",
+        "5. Top with remaining bread slices and cut diagonally"
       ],
       servings: 4,
       totalCalories: 1610, // Sum of all ingredient calories
@@ -216,12 +203,12 @@ const recipeData = {
         }
       ],
       instructions: [
-        "Dice potatoes into 1/2 inch cubes",
-        "Dice half onion finely",
-        "Fry potatoes until golden and crispy",
-        "Add onions and cook until soft",
-        "Beat eggs and pour over potatoes",
-        "Cook until eggs are set, stirring occasionally"
+        "1. Dice potatoes into 1/2 inch cubes",
+        "2. Dice half onion finely",
+        "3. Fry potatoes until golden and crispy",
+        "4. Add onions and cook until soft",
+        "5. Beat eggs and pour over potatoes",
+        "6. Cook until eggs are set, stirring occasionally"
       ],
       servings: 3,
       totalCalories: 773, // Sum of all ingredient calories
@@ -257,11 +244,11 @@ const recipeData = {
         }
       ],
       instructions: [
-        "Bring a large pot of water to boil and cook pasta until al dente (about 11 minutes)",
-        "Meanwhile, mince garlic cloves",
-        "In a large pan, heat tomato sauce and add minced garlic",
-        "Simmer sauce for 10 minutes to develop flavors",
-        "Drain pasta and combine with sauce"
+        "1. Bring a large pot of water to boil and cook pasta until al dente (about 11 minutes)",
+        "2. Meanwhile, mince garlic cloves",
+        "3. In a large pan, heat tomato sauce and add minced garlic",
+        "4. Simmer sauce for 10 minutes to develop flavors",
+        "5. Drain pasta and combine with sauce"
       ],
       servings: 4,
       totalCalories: 1852, // Sum of all ingredient calories
@@ -297,12 +284,12 @@ const recipeData = {
         }
       ],
       instructions: [
-        "Dice onion finely",
-        "In a large pot, sauté onion until translucent (about 5 minutes)",
-        "Add beans with their liquid and broth",
-        "Bring to a simmer and cook for 15 minutes",
-        "Optional: blend half the soup for a creamier texture",
-        "Season with salt and pepper to taste"
+        "1. Dice onion finely",
+        "2. In a large pot, sauté onion until translucent (about 5 minutes)",
+        "3. Add beans with their liquid and broth",
+        "4. Bring to a simmer and cook for 15 minutes",
+        "5. Optional: blend half the soup for a creamier texture",
+        "6. Season with salt and pepper to taste"
       ],
       servings: 6,
       totalCalories: 1165, // Sum of all ingredient calories
@@ -348,13 +335,13 @@ const recipeData = {
         }
       ],
       instructions: [
-        "Dice onion finely",
-        "In a large pot, brown ground beef with diced onion, breaking meat into small pieces",
-        "Drain excess fat if desired",
-        "Add beans (with liquid) and diced tomatoes",
-        "Bring to a simmer and cook for 20 minutes, stirring occasionally",
-        "Season with salt and pepper to taste",
-        "Optional: Top with shredded cheese"
+        "1. Dice onion finely",
+        "2. In a large pot, brown ground beef with diced onion, breaking meat into small pieces",
+        "3. Drain excess fat if desired",
+        "4. Add beans (with liquid) and diced tomatoes",
+        "5. Bring to a simmer and cook for 20 minutes, stirring occasionally",
+        "6. Season with salt and pepper to taste",
+        "7. Optional: Top with shredded cheese"
       ],
       servings: 6,
       totalCalories: 2165, // Sum of all ingredient calories
@@ -390,12 +377,12 @@ const recipeData = {
         }
       ],
       instructions: [
-        "Cook rice according to package instructions",
-        "While rice cooks, remove meat from rotisserie chicken and shred",
-        "Cook frozen vegetables in microwave according to package directions",
-        "In a large bowl, combine rice, shredded chicken, and vegetables",
-        "Season with salt and pepper to taste",
-        "Optional: Add soy sauce for extra flavor"
+        "1. Cook rice according to package instructions",
+        "2. While rice cooks, remove meat from rotisserie chicken and shred",
+        "3. Cook frozen vegetables in microwave according to package directions",
+        "4. In a large bowl, combine rice, shredded chicken, and vegetables",
+        "5. Season with salt and pepper to taste",
+        "6. Optional: Add soy sauce for extra flavor"
       ],
       servings: 6,
       totalCalories: 3200, // Sum of all ingredient calories
@@ -439,240 +426,18 @@ const recipeData = {
         }
       ],
       instructions: [
-        "Wash and dice potatoes into 1/2 inch cubes",
-        "Dice onion finely",
-        "In a large skillet, brown ground beef with onion, breaking meat into small pieces",
-        "Remove beef mixture and set aside, leaving some fat in the pan",
-        "Add diced potatoes to the same skillet and cook until golden and tender (about 15 minutes)",
-        "Return beef mixture to the pan",
-        "Add drained corn and heat through",
-        "Season with salt and pepper to taste"
+        "1. Wash and dice potatoes into 1/2 inch cubes",
+        "2. Dice onion finely",
+        "3. In a large skillet, brown ground beef with onion, breaking meat into small pieces",
+        "4. Remove beef mixture and set aside, leaving some fat in the pan",
+        "5. Add diced potatoes to the same skillet and cook until golden and tender (about 15 minutes)",
+        "6. Return beef mixture to the pan",
+        "7. Add drained corn and heat through",
+        "8. Season with salt and pepper to taste"
       ],
       servings: 6,
       totalCalories: 2145, // Sum of all ingredient calories
       caloriesPerServing: 358 // Rounded total calories per serving
-    }
-  ],
-  
-  costco: [
-    // Under $30 Total Category (adjusted for Costco bulk sizing)
-    {
-      category: "Under $30 Total",
-      name: "Bulk Meal Prep Chicken & Rice (12 servings)",
-      ingredients: [
-        {
-          name: "kirkland chicken breast",
-          type: "protein",
-          quantity: "3 lbs",
-          estimatedCost: (21.99 / 6.5) * 3,
-          calories: 1440, // 12 4-oz servings
-          caloriesPerServing: 120
-        },
-        {
-          name: "kirkland rice",
-          type: "grain",
-          quantity: "3 cups dry",
-          estimatedCost: (16.99 / 50) * 3, // 25lb = ~50 cups
-          calories: 1920, // 12 quarter-cup servings
-          caloriesPerServing: 160
-        },
-        {
-          name: "kirkland frozen vegetables",
-          type: "produce",
-          quantity: "6 cups",
-          estimatedCost: (12.99 / 22) * 6, // 5.5lb = ~22 cups
-          calories: 420, // 6 cups
-          caloriesPerServing: 35
-        }
-      ],
-      instructions: [
-        "Cook rice according to package instructions",
-        "Cut chicken breasts into even portions",
-        "Season chicken with salt and pepper",
-        "Cook chicken in batches until done",
-        "Steam frozen vegetables according to package directions",
-        "Portion into 12 containers",
-        "Optional: Add your favorite sauce when serving"
-      ],
-      servings: 12,
-      totalCalories: 3780,
-      caloriesPerServing: 315
-    },
-    {
-      category: "Under $30 Total",
-      name: "Big Batch Pasta & Marinara (15 servings)",
-      ingredients: [
-        {
-          name: "kirkland pasta",
-          type: "grain",
-          quantity: "3 lbs",
-          estimatedCost: (9.99 / 8) * 3,
-          calories: 3000, // 15 2-oz servings
-          caloriesPerServing: 200
-        },
-        {
-          name: "kirkland marinara",
-          type: "sauce",
-          quantity: "2 jars (90 oz total)",
-          estimatedCost: (9.99 / 3) * 2,
-          calories: 1050, // 15 half-cup servings
-          caloriesPerServing: 70
-        },
-        {
-          name: "kirkland mozzarella",
-          type: "dairy",
-          quantity: "1 lb",
-          estimatedCost: (13.99 / 2.5) * 1,
-          calories: 1280, // 16 oz
-          caloriesPerServing: 85
-        }
-      ],
-      instructions: [
-        "Bring a large pot of water to boil",
-        "Cook pasta in batches until al dente",
-        "Heat marinara sauce in a separate pot",
-        "Combine pasta and sauce",
-        "Top each portion with shredded mozzarella",
-        "Optional: Add Italian herbs or garlic powder"
-      ],
-      servings: 15,
-      totalCalories: 5330,
-      caloriesPerServing: 355
-    },
-
-    // Family Size Under $50 Category
-    {
-      category: "Family Size Under $50",
-      name: "Chicken Mozzarella Pasta Bake (20 servings)",
-      ingredients: [
-        {
-          name: "kirkland chicken breast",
-          type: "protein",
-          quantity: "4 lbs",
-          estimatedCost: (21.99 / 6.5) * 4,
-          calories: 1920, // 16 4-oz servings
-          caloriesPerServing: 96
-        },
-        {
-          name: "kirkland pasta",
-          type: "grain",
-          quantity: "4 lbs",
-          estimatedCost: (9.99 / 8) * 4,
-          calories: 4000, // 20 2-oz servings
-          caloriesPerServing: 200
-        },
-        {
-          name: "kirkland marinara",
-          type: "sauce",
-          quantity: "2 jars (90 oz total)",
-          estimatedCost: (9.99 / 3) * 2,
-          calories: 1400, // 20 half-cup servings
-          caloriesPerServing: 70
-        },
-        {
-          name: "kirkland mozzarella",
-          type: "dairy",
-          quantity: "2 lbs",
-          estimatedCost: (13.99 / 2.5) * 2,
-          calories: 2560, // 32 oz
-          caloriesPerServing: 128
-        }
-      ],
-      instructions: [
-        "Cut chicken breasts into bite-sized pieces",
-        "Season chicken with salt, pepper, and Italian herbs",
-        "Cook chicken in batches until golden",
-        "Cook pasta in large pots until al dente",
-        "Mix pasta with marinara sauce and cooked chicken",
-        "Transfer to baking dishes, top with mozzarella",
-        "Bake at 375°F until cheese is melted and bubbly",
-        "Optional: Garnish with fresh basil if desired"
-      ],
-      servings: 20,
-      totalCalories: 9880,
-      caloriesPerServing: 494
-    },
-    {
-      category: "Family Size Under $50",
-      name: "Breakfast Meal Prep (24 servings)",
-      ingredients: [
-        {
-          name: "kirkland bacon",
-          type: "protein",
-          quantity: "2 lbs",
-          estimatedCost: (16.99 / 4) * 2,
-          calories: 2160, // 48 slices (2 per serving)
-          caloriesPerServing: 90
-        },
-        {
-          name: "kirkland eggs",
-          type: "protein",
-          quantity: "24 eggs",
-          estimatedCost: 8.99,
-          calories: 1680, // 24 eggs
-          caloriesPerServing: 70
-        },
-        {
-          name: "kirkland frozen vegetables",
-          type: "produce",
-          quantity: "6 cups",
-          estimatedCost: (12.99 / 22) * 6,
-          calories: 420, // 6 cups
-          caloriesPerServing: 17.5
-        }
-      ],
-      instructions: [
-        "Cook bacon in batches until crispy",
-        "Drain on paper towels",
-        "Scramble eggs in batches",
-        "Steam vegetables according to package",
-        "Portion into containers",
-        "Optional: Add cheese or hot sauce when serving"
-      ],
-      servings: 24,
-      totalCalories: 4260,
-      caloriesPerServing: 177.5
-    },
-    {
-      category: "Family Size Under $50",
-      name: "Rotisserie Chicken Feast (10 servings)",
-      ingredients: [
-        {
-          name: "rotisserie chicken costco",
-          type: "protein",
-          quantity: "2 whole chickens",
-          estimatedCost: 4.99 * 2,
-          calories: 3000, // 2 whole chickens
-          caloriesPerServing: 300
-        },
-        {
-          name: "kirkland rice",
-          type: "grain",
-          quantity: "2.5 cups dry",
-          estimatedCost: (16.99 / 50) * 2.5,
-          calories: 1600, // 10 quarter-cup servings
-          caloriesPerServing: 160
-        },
-        {
-          name: "kirkland frozen vegetables",
-          type: "produce",
-          quantity: "5 cups",
-          estimatedCost: (12.99 / 22) * 5,
-          calories: 350, // 5 cups
-          caloriesPerServing: 35
-        }
-      ],
-      instructions: [
-        "Cook rice according to package instructions",
-        "Remove meat from rotisserie chickens",
-        "Steam vegetables according to package",
-        "Combine rice, chicken, and vegetables",
-        "Season with salt and pepper",
-        "Optional: Add soy sauce or other seasonings"
-      ],
-      servings: 10,
-      totalCalories: 4950,
-      caloriesPerServing: 495
     }
   ]
 };
@@ -686,39 +451,21 @@ function showRecipes() {
 
   if (!matchedStore) {
     recipesDiv.innerHTML = `<p style="color: red;">Sorry, we don't have recipes for that store yet. Try Walmart.</p>`;
-    document.querySelector('.scroll-bottom').style.display = 'none';
     return;
   }
 
-  // Show scroll button when recipes are displayed
-  document.querySelector('.scroll-bottom').style.display = 'flex';
-
-  // Add price and calorie warning at the top with store-specific messaging
+  // Add price and calorie warning at the top
   const warningDiv = document.createElement('div');
   warningDiv.className = "price-warning";
-  
-  const warningMessage = matchedStore === 'costco' 
-    ? `
-      <p>
-        <strong>⚠️ Notice:</strong> All prices and calorie counts shown are approximate. 
-        Prices are based on Kirkland Signature or Costco-specific items and may vary by location and time of year. 
-        Calorie information is estimated based on standard serving sizes and typical portions. 
-        Actual calories may vary based on specific products used and preparation methods.
-        Prices shown are estimates from Costco US stores and were last updated in 2024.
-        Note that Costco prices and availability can vary significantly by region.
-      </p>
-    `
-    : `
-      <p>
-        <strong>⚠️ Notice:</strong> All prices and calorie counts shown are approximate. 
-        Prices are based on Great Value or store brand items when available and may vary by location and time of year. 
-        Calorie information is estimated based on standard serving sizes and typical portions. 
-        Actual calories may vary based on specific products used and preparation methods.
-        Prices shown are estimates from Walmart US stores and were last updated in 2024.
-      </p>
-    `;
-  
-  warningDiv.innerHTML = warningMessage;
+  warningDiv.innerHTML = `
+    <p>
+      <strong>⚠️ Notice:</strong> All prices and calorie counts shown are approximate. 
+      Prices are based on Great Value or store brand items when available and may vary by location and time of year. 
+      Calorie information is estimated based on standard serving sizes and typical portions. 
+      Actual calories may vary based on specific products used and preparation methods.
+      Prices shown are estimates from Walmart US stores and were last updated in 2024.
+    </p>
+  `;
   recipesDiv.appendChild(warningDiv);
 
   // Group recipes by category
@@ -741,31 +488,19 @@ function showRecipes() {
       const div = document.createElement('div');
       div.className = "recipe";
       
-      let recipeIngredientCost = 0;
-      let totalPackageCost = 0;
+      let totalCost = 0;
       let totalCalories = 0;
       let ingredientsList = '';
       
       recipe.ingredients.forEach(item => {
-        // Calculate the cost of ingredients used in recipe
-        recipeIngredientCost += item.estimatedCost;
-        
-        // Calculate the cost of full packages needed
-        const fullPackagePrice = (() => {
-          const itemDB = ingredientPriceDB[item.name];
-          return itemDB.price;
-        })();
-        totalPackageCost += fullPackagePrice;
-        
+        totalCost += item.estimatedCost;
         totalCalories += item.calories;
         ingredientsList += `
           <li>
             ${item.name} - ${item.quantity}
             <br>
             <small>
-              Cost for recipe portion: $${item.estimatedCost.toFixed(2)} 
-              <br>
-              Full package cost: $${ingredientPriceDB[item.name].price.toFixed(2)}
+              Estimated cost: $${item.estimatedCost.toFixed(2)} 
               (${ingredientPriceDB[item.name].brand} - ${ingredientPriceDB[item.name].unit})
               <br>
               Calories: ~${item.calories} total (${item.caloriesPerServing} cal per serving)
@@ -779,9 +514,8 @@ function showRecipes() {
       div.innerHTML = `
         <h3>${recipe.name}</h3>
         <div class="recipe-summary">
-          <p><strong>Estimated Cost for Recipe Portions: $${recipeIngredientCost.toFixed(2)}</strong></p>
-          <p><strong>Total Cost for Full Packages: $${totalPackageCost.toFixed(2)}</strong></p>
-          <p><strong>Cost per serving (based on recipe portions): $${(recipeIngredientCost / recipe.servings).toFixed(2)}</strong> (Makes ${recipe.servings} servings)</p>
+          <p><strong>Estimated Total Cost: $${totalCost.toFixed(2)}</strong></p>
+          <p><strong>Cost per serving: $${(totalCost / recipe.servings).toFixed(2)}</strong> (Makes ${recipe.servings} servings)</p>
           <p><strong>Total Calories: ${totalCalories}</strong></p>
           <p><strong>Calories per serving: ${caloriesPerServing}</strong></p>
         </div>
@@ -799,15 +533,4 @@ function showRecipes() {
     });
   }
 }
-
-function scrollToBottom() {
-  window.scrollTo({
-    top: document.documentElement.scrollHeight,
-    behavior: 'smooth'
-  });
-}
-
-// Hide scroll button initially
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('.scroll-bottom').style.display = 'none';
-});
+  
