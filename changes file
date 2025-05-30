@@ -1,3 +1,3 @@
 git add .
-git commit -m "differentiated between ingredient cost and cost per recipe"
+git commit -m "updates text"
 git push
