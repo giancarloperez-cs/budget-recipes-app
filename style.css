@@ -359,3 +359,37 @@ footer {
   margin-top: 4px;
   line-height: 1.4;
 }
+
+.scroll-bottom {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  background-color: var(--matcha-primary);
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-bottom:hover {
+  background-color: var(--matcha-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(74, 89, 62, 0.2);
+}
+
+@media (max-width: 600px) {
+  .scroll-bottom {
+    bottom: 20px;
+    left: 20px;
+    width: 45px;
+    height: 45px;
+  }
+}

@@ -451,8 +451,12 @@ function showRecipes() {
 
   if (!matchedStore) {
     recipesDiv.innerHTML = `<p style="color: red;">Sorry, we don't have recipes for that store yet. Try Walmart.</p>`;
+    document.querySelector('.scroll-bottom').style.display = 'none';
     return;
   }
+
+  // Show scroll button when recipes are displayed
+  document.querySelector('.scroll-bottom').style.display = 'flex';
 
   // Add price and calorie warning at the top
   const warningDiv = document.createElement('div');
@@ -533,3 +537,15 @@ function showRecipes() {
     });
   }
 }
+
+function scrollToBottom() {
+  window.scrollTo({
+    top: document.documentElement.scrollHeight,
+    behavior: 'smooth'
+  });
+}
+
+// Hide scroll button initially
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.scroll-bottom').style.display = 'none';
+});
