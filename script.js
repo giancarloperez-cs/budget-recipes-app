@@ -49,7 +49,20 @@ const ingredientPriceDB = {
   "kirkland marinara": { price: 9.99, unit: "3-pack 45oz jars", brand: "Kirkland Signature", calories: 70 }, // per 1/2 cup
   "kirkland frozen vegetables": { price: 12.99, unit: "5.5 lb bag", brand: "Kirkland Signature", calories: 70 }, // per cup
   "kirkland eggs": { price: 8.99, unit: "24 count", brand: "Kirkland Signature", calories: 70 }, // per egg
-  "kirkland tortillas": { price: 6.99, unit: "20 count", brand: "Kirkland Signature", calories: 140 } // per tortilla
+  "kirkland tortillas": { price: 6.99, unit: "20 count", brand: "Kirkland Signature", calories: 140 }, // per tortilla
+
+  // Food 4 Less specific items
+  "kroger lean ground beef": { price: 4.49, unit: "per lb", brand: "Kroger", calories: 290 }, // per 4 oz, 80/20 lean
+  "foster farms chicken breast": { price: 3.49, unit: "per lb", brand: "Foster Farms", calories: 120 }, // per 4 oz, boneless skinless
+  "mahatma long grain rice": { price: 3.99, unit: "5 lb bag", brand: "Mahatma", calories: 160 }, // per 1/4 cup dry
+  "barilla penne pasta": { price: 0.89, unit: "16 oz box", brand: "Barilla", calories: 200 }, // per 2 oz dry
+  "ragu traditional marinara": { price: 1.99, unit: "24 oz jar", brand: "Ragu", calories: 70 }, // per 1/2 cup
+  "birdseye mixed vegetables": { price: 1.49, unit: "12 oz bag", brand: "Bird's Eye", calories: 70 }, // per cup, carrots, peas, corn & green beans
+  "kroger large eggs": { price: 3.99, unit: "dozen", brand: "Kroger", calories: 70 }, // per egg, grade A
+  "kroger wheat bread": { price: 0.99, unit: "20 oz loaf", brand: "Kroger", calories: 80 }, // per slice
+  "kroger black beans": { price: 0.69, unit: "15 oz can", brand: "Kroger", calories: 120 }, // per 1/2 cup, low sodium
+  "hunts diced tomatoes": { price: 0.79, unit: "14.5 oz can", brand: "Hunt's", calories: 30 }, // per 1/2 cup, no salt added
+  "kroger mild cheddar": { price: 2.99, unit: "8 oz block", brand: "Kroger", calories: 110 } // per oz
 };
 
 // Recipe data with common ingredients
@@ -673,6 +686,184 @@ const recipeData = {
       servings: 10,
       totalCalories: 4950,
       caloriesPerServing: 495
+    }
+  ],
+
+  food4less: [
+    // Under $10 Total Category
+    {
+      category: "Under $10 Total",
+      name: "Budget Bean & Rice Bowl (6 servings)",
+      ingredients: [
+        {
+          name: "mahatma long grain rice",
+          type: "grain",
+          quantity: "2 cups dry",
+          estimatedCost: (3.99 / 5) * 2,
+          calories: 1280, // 8 quarter-cups
+          caloriesPerServing: Math.round(1280 / 6)
+        },
+        {
+          name: "kroger black beans",
+          type: "protein",
+          quantity: "2 cans (15 oz each), low sodium",
+          estimatedCost: 0.69 * 2,
+          calories: 720, // 6 half-cups
+          caloriesPerServing: Math.round(720 / 6)
+        },
+        {
+          name: "birdseye mixed vegetables",
+          type: "produce",
+          quantity: "1 bag (12 oz)",
+          estimatedCost: 1.49,
+          calories: 210, // 3 cups
+          caloriesPerServing: Math.round(210 / 6)
+        }
+      ],
+      instructions: [
+        "Cook rice according to package instructions",
+        "Heat beans in a saucepan",
+        "Cook frozen vegetables according to package directions",
+        "Combine rice, beans, and vegetables in bowls",
+        "Season with salt and pepper to taste",
+        "Optional: Add hot sauce or lime juice"
+      ],
+      servings: 6,
+      totalCalories: 2210,
+      caloriesPerServing: 368
+    },
+    {
+      category: "Under $10 Total",
+      name: "Simple Pasta Dinner (4 servings)",
+      ingredients: [
+        {
+          name: "barilla penne pasta",
+          type: "grain",
+          quantity: "16 oz box",
+          estimatedCost: 0.89,
+          calories: 1600, // 8 2-oz servings
+          caloriesPerServing: Math.round(1600 / 4)
+        },
+        {
+          name: "ragu traditional marinara",
+          type: "sauce",
+          quantity: "1 jar (24 oz)",
+          estimatedCost: 1.99,
+          calories: 280, // 4 half-cups
+          caloriesPerServing: Math.round(280 / 4)
+        },
+        {
+          name: "kroger mild cheddar",
+          type: "dairy",
+          quantity: "8 oz block",
+          estimatedCost: 2.99,
+          calories: 880, // 8 oz
+          caloriesPerServing: Math.round(880 / 4)
+        }
+      ],
+      instructions: [
+        "Boil pasta according to package directions",
+        "Heat marinara sauce in a pan",
+        "Grate the cheese",
+        "Combine pasta and sauce",
+        "Top with grated cheese",
+        "Optional: Add Italian herbs or garlic powder"
+      ],
+      servings: 4,
+      totalCalories: 2760,
+      caloriesPerServing: 690
+    },
+
+    // Under $15 Total Category
+    {
+      category: "Under $15 Total",
+      name: "Hearty Chicken & Rice (6 servings)",
+      ingredients: [
+        {
+          name: "foster farms chicken breast",
+          type: "protein",
+          quantity: "2 lbs, boneless skinless",
+          estimatedCost: 3.49 * 2,
+          calories: 960, // 8 4-oz servings
+          caloriesPerServing: Math.round(960 / 6)
+        },
+        {
+          name: "mahatma long grain rice",
+          type: "grain",
+          quantity: "2 cups dry",
+          estimatedCost: (3.99 / 5) * 2,
+          calories: 1280, // 8 quarter-cups
+          caloriesPerServing: Math.round(1280 / 6)
+        },
+        {
+          name: "birdseye mixed vegetables",
+          type: "produce",
+          quantity: "2 bags (24 oz total)",
+          estimatedCost: 1.49 * 2,
+          calories: 420, // 6 cups
+          caloriesPerServing: Math.round(420 / 6)
+        }
+      ],
+      instructions: [
+        "Cook rice according to package instructions",
+        "Cut chicken into even pieces and season",
+        "Cook chicken until done",
+        "Steam frozen vegetables according to package",
+        "Combine rice, chicken, and vegetables",
+        "Season with salt and pepper to taste"
+      ],
+      servings: 6,
+      totalCalories: 2660,
+      caloriesPerServing: 443
+    },
+    {
+      category: "Under $15 Total",
+      name: "Protein-Packed Pasta Bake (6 servings)",
+      ingredients: [
+        {
+          name: "kroger lean ground beef",
+          type: "protein",
+          quantity: "1 lb, 80/20 lean",
+          estimatedCost: 4.49,
+          calories: 1160, // 4 4-oz servings
+          caloriesPerServing: Math.round(1160 / 6)
+        },
+        {
+          name: "barilla penne pasta",
+          type: "grain",
+          quantity: "16 oz box",
+          estimatedCost: 0.89,
+          calories: 1600, // 8 2-oz servings
+          caloriesPerServing: Math.round(1600 / 6)
+        },
+        {
+          name: "ragu traditional marinara",
+          type: "sauce",
+          quantity: "1 jar (24 oz)",
+          estimatedCost: 1.99,
+          calories: 280, // 4 half-cups
+          caloriesPerServing: Math.round(280 / 6)
+        },
+        {
+          name: "kroger mild cheddar",
+          type: "dairy",
+          quantity: "8 oz block",
+          estimatedCost: 2.99,
+          calories: 880, // 8 oz
+          caloriesPerServing: Math.round(880 / 6)
+        }
+      ],
+      instructions: [
+        "Cook pasta according to package directions",
+        "Brown ground beef in a large pan",
+        "Add marinara sauce to the beef",
+        "Mix sauce with cooked pasta",
+        "Top with grated cheese",
+        "Optional: Bake at 350°F until cheese melts"
+      ],
+      servings: 6,
+      totalCalories: 3920,
+      caloriesPerServing: 653
     }
   ]
 };
