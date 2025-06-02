@@ -899,6 +899,16 @@ function showRecipes() {
         Note that Costco prices and availability can vary significantly by region.
       </p>
     `
+    : matchedStore === 'food4less'
+    ? `
+      <p>
+        <strong>⚠️ Notice:</strong> All prices and calorie counts shown are approximate. 
+        Prices are based on Kroger store brand items and common national brands found at Food 4 Less, and may vary by location and time of year. 
+        Calorie information is estimated based on standard serving sizes and typical portions. 
+        Actual calories may vary based on specific products used and preparation methods.
+        Prices shown are estimates from Food 4 Less US stores and were last updated in 2024.
+      </p>
+    `
     : `
       <p>
         <strong>⚠️ Notice:</strong> All prices and calorie counts shown are approximate. 
