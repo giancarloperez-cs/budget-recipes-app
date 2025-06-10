@@ -8,7 +8,7 @@ const ingredientPriceDB = {
   "chunk light tuna in water": { price: 0.88, unit: "5 oz can", brand: "Great Value", calories: 100 }, // per can
   "seasoned rotisserie chicken": { price: 4.98, unit: "2 lb chicken", brand: "Walmart Deli", calories: 750 }, // per half chicken
   "creamy peanut butter": { price: 1.97, unit: "15 oz jar", brand: "Great Value", calories: 190 }, // per 2 tbsp
-  
+
   // Vegetables & Fruits
   "mixed frozen vegetables": { price: 1.98, unit: "12 oz bag", brand: "Great Value", calories: 70 }, // per cup
   "yellow onion (medium)": { price: 0.98, unit: "each", brand: "Fresh Produce", calories: 45 }, // per onion

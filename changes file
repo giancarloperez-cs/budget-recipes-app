@@ -1,3 +1,3 @@
 git add .
-git commit -m "food4less warning added"
+git commit -m "announcements updated"
 git push 
